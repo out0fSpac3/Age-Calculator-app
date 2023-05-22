@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    border-bottom-right-radius: 30%;
+}
+
+.input-date {
+    display: flex;
+    width: 70%;
+    margin-left: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    opacity: 0.8;
+    margin-top: 40px;
+}
+
+span .error{
+    display: inline-block;
+    color: rgb(201, 98, 98);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.date {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.month {
+    margin-right: 10px;
+}
+
+.inputNumDay, .inputNumMonth, .inputNumYear {
+    max-width: 50%;
+    height: 40px;
+    margin-top: 6px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.year {
+    margin-left: -40px;
+}
+
+.month {
+    margin-left: -30px;
+}
+
+.error {
+    padding-top: 5px;
+    font-size: 0.7rem;
+}
+
+
+.line-btn {
+    display: flex;
+}
+
+.hr-line {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.horizontal {
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    width: 476px;
+    opacity: 0.5;
+}
+
+.btn-container {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.output-date {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-size: 64px;
+    margin-left: 30px;
+    padding-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.dash {
+    color: #854dff;
+}
+
+
+@media screen and (max-width:500px) {
+    
+.container {
+    width: 90%;
+}
+
+.input-date {
+    width: 90%;
+    margin-left: 20px;
+}
+
+.inputNumDay, .inputNumMonth, .inputNumYear {
+    max-width: 45%;
+}
+
+.error {
+  font-size: 0.5rem;
+  padding-top: 0;
+}
+
+.year {
+    margin-left: -70px;
+}
+
+.month {
+    margin-left: -70px;
+}
+
+
+.output-date {
+    font-size: 32px;
+}
+
+.horizontal {
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    width: 275px;
+    opacity: 0.5;
+}
+
+.btn {
+    margin-right: 270px;
+    z-index: 1;
+}
+
+}
